@@ -21,17 +21,28 @@ nav{
 /*
 this is the footer selector - gennerally the footer will be at the bottom of the page
 */
+header{
+    text-align: center;
+}
+/*the image will be affected by this style*/
+#memes{
+    margin-right: 200px;
+animation-name: moving;
+animation-duration: 0s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes moving {
+    from{
+        margin-left: 100px;
+     }
+     to {
+        margin-left: 500px;
+        margin-top: 2%;
+    }
+    }
 footer{
     text-align: center;
     margin-right: 200px;
 }
 
-/*the image will be affected by this style*/
-#meme{
-    margin-right: 200px;
-}
-
-/*anything in the header tags will be affected by this style*/
-header{
-    text-align: center;
-}
