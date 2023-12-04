@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun Palindrome Checker</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif
+    background-color: #f3e5f5
+    text-align: center
+    padding: 50px
+  }
+
+  h2 {
+    color: #6a1b9a
+    margin-bottom: 20px
+  }
+
+  #palindromeInput {
+    padding: 10px
+    width: 80%
+    max-width: 400px
+    border-radius: 5px
+    border: 2px solid #7e57c2
+    font-size: 16px
+    margin-bottom: 10px
+  }
+
+  button {
+    padding: 10px 20px
+    background-color: #ab47bc
+    color: white
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    font-size: 16px
+    transition: background-color 0.3s ease
+  }
+
+  button:hover {
+    background-color: #8e24aa
+  }
+
+  #result {
+    margin-top: 20px
+    font-size: 18px
+    color: #4a148c
+    font-weight: bold
+  }
+
+  .is-palindrome {
+    color: #2e7d32
+  }
+
+  .not-palindrome {
+    color: #c62828
+  }
+</style>
+</head>
+<body>
+<h2>Fun Palindrome Checker</h2>
+<input type="text" id="palindromeInput" placeholder="Enter text and check if it's a palindrome">
+<button onclick="checkPalindrome()">Check</button>
+<p id="result"></p>
+
+<script>
+function checkPalindrome() {
+    var inputString = document.getElementById('palindromeInput').value
+    var regex = /[^A-Za-z0-9]/g
+    var processedString = inputString.toLowerCase().replace(regex, '')
+    var reverseString = processedString.split('').reverse().join('')
+    var resultElement = document.getElementById('result')
+
+    if (processedString === reverseString && processedString !== '') {
+        resultElement.textContent = '"' + inputString + '" is a palindrome!'
+        resultElement.className = 'is-palindrome'
+    } else if (processedString === '') {
+        resultElement.textContent = 'Please enter some text to check.'
+        resultElement.className = 'not-palindrome'
+    } else {
+        resultElement.textContent = '"' + inputString + '" is not a palindrome.'
+        resultElement.className = 'not-palindrome'
+    }
+}
+</script>
+</body>
+</html>
