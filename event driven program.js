@@ -17,7 +17,7 @@ function addButton(){
     inputElementStop.setAttribute("disabled","true");
 
 
-    let parent = document.getElementById("memes");
+    let parent = document.getElementById("buttons");
     parent.appendChild(inputElementStart);
     parent.appendChild(inputElementStop);
 

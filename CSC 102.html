@@ -7,7 +7,7 @@
 <head>
 <!--this page can support basicly and charister in any language-->
     <meta charset="UTF-8">
-    <!--keep this tag so the webisite will look good on desktop or mobile -->>
+    <!--keep this tag so the webisite will look good on desktop or mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--the text will appear in the browser tab
     keep it short, sweet and descriptive
@@ -16,30 +16,47 @@
         <!--add a link to the CSS file -->
         <link rel= "stylesheet" href="main CSS styling for boards and CSC 102.css">     
         <script src="event driven program.js"></script>
+        
 </head>
+<header>
+<h1>CSC102 Home page</h1>
+</header>
 <!--all of our page content should go here-->
 <body>
     <!--add the page heading = the page title, 1 and only 1 h1 per page -->
-    <header>
-        </h1>CSC102 Home page</h1>
-    </header>
+    <hr>
+
 
     <!--this is the navigation section-->
     <nav>
-        <!--this is a link to the home page-->
-        <a href="CSC 102.html">Home</a>;
+        <div id="navButton's">
+        <label for="nav">Navigation</label><hr>
+
+        <!--this is a link to the home page
+        <Button class="navButton" onclick="location.replace('boards.html')";>Home</button> 
+        <br>
+        <!-this is a link to the game page-->
+        <button class="navButton" onclick="location.replace('game.html')";>Game</button>
         <br>
         <!--this is a link to the boards page-->
-        <a href="boards.html">information</a>
+        <button class="navButton" onclick="location.replace('boards.html')";>Information</button>
         <br>
-        <!--this is a link to the game page-->
-        <a href="game.html">game</a>
+        <!--this is to the palandron checker-->
+        <button class="navButton" onclick="location.replace('palandrone checker.html')";>palindrome</button>
         <br>
+        <button class="navButton" onclick="location.replace('strings.html')";>Logout!</button>
+
+        </div>
     </nav>
+
 <!--this paragraph tag will hold our meme-->
 <p id="memes">
         <!--This is my meme image -->
     <img id="meme" src="funny.jpeg.jpeg" alt="meme image"><br>
+</p>
+<hr>
+<p id="buttons">
+
 </p>
 <hr>
 <input id="addButton" type="button" value="Add start and stop button" onclick="addButton() ;">

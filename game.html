@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3 game</title>
+    <link rel= "stylesheet" href="main CSS styling for boards and CSC 102.css">  
     <script src="game.js"></script>
 </head>
 <body>
 
     <!--this is the page header-->
     <h1>Welcome lets play a dice game called craps</h1>
-        <!--this is the navigation section-->
-     <nav>
+    <!--this is the navigation section-->
+    <nav>
+        <div id="navButton's">
+            <label for="nav">Navigation</label><hr>
         <!--this is a link to the home page-->
-        <a href="CSC 102.html">Home</a>
+        <Button class="navButton" onclick="location.replace('CSC 102.html')";>Home</button>
         <br>
         <!--this is a link to the boards page-->
-        <a href="boards.html">information</a>
+        <button class="navButton" onclick="location.replace('boards.html')";>Information</button>
         <br>
-        <!--this is a link to the game page-->
-        <a href="game.html">game</a>
+        <!--this is to the palandron checker-->
+        <button class="navButton" onclick="location.replace('palandrone checker.html')";>palindrome</button>
         <br>
-        </nav>
+        <button class="navButton" onclick="location.replace('strings.html')";>Logout!</button>
+
+        </div>
+    </nav>
     <!--button; when clicked this will start the game-->
     <button onclick="playcraps();">play craps</button>
     <!--this will show the results - win/loss/tie-->

@@ -6,34 +6,41 @@
 <head>
 <!--this page can support basicly and charister in any language-->
     <meta charset="UTF-8">
-    <!--keep this tag so the webisite will look good on desktop or mobile -->>
+    <!--keep this tag so the webisite will look good on desktop or mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--the text will appear in the browser tab
-    keep it short, sweet and descriptive
--->
-        <title>boards </title>
+    keep it short, sweet and descriptive-->  
+     
+      <h1>Zachary's Boards Page</h1>
+      <hr>
     <!--this is the navigation section-->
- <nav>
-    <!--this is a link to the home page-->
-     <a href="CSC 102.html">Home</a>;
-    <br>
-     <!--this is a link to the boards page-->
-    <a href="boards.html">information</a>
-     <br>
-    <!--this is a link to the game page-->
-     <a href="game.html">game</a>
-     <br>
- </nav>
+    <nav>
+        <div id="navButton's">
+            <label for="nav">Navigation</label><hr>
+        <!--this is a link to the home page-->
+        <Button class="navButton" onclick="location.replace('CSC 102.html')";>Home</button>
+        <br>
+        <!--this is a link to the game page-->
+        <button class="navButton" onclick="location.replace('game.html')";>Game</button>
+        <br>
+        <!--this is to the palandron checker-->
+        <button class="navButton" onclick="location.replace('palandrone checker.html')";>palindrome</button>
+        <br>
+        <button class="navButton" onclick="location.replace('strings.html')";>Logout!</button>
+
+        </div>
+    </nav>
         <!--add a link to the CSS file -->
-        <link rel= "stylesheet" href="main CSS styling for boards and CSC 102.css">
+        <link rel= "stylesheet" href="boards.css">
 </head>
 <!--all of our page content should go here-->
 <body>
+    
     <!--add the page heading = the page title, 1 and only 1 h1 per page -->
-</body>
 
 <!--this paragraph tag will hold our meme-->
-<p>
+<p1>
+
     CYBER SECURITY DEGREE OBJECTIVES<br><br>
     1. Understand an organization’s security strategy through the design, appraisal and management of an organization's global<br><br>
     security strategies and systems to mitigate risk, maintain continuity of operations, and protect organizational assets.<br><br>
@@ -48,8 +55,36 @@
     5. Research and deploy technology solutions and security management techniques to safeguard an organization’s intellectual<br><br>
     and physical assets while assuring that all information systems are functional and secure.<br><br>
     6. Anticipate the integration of future trends and technologies into cybersecurity frameworks<br><br>
-</p>
+    <hr>
+</p1>
 
+<p2 class="table">
+    <table>
+        <tr>
+            <th>Course Number </th>
+            <th>Instructor</th>
+            <th>Credit</th>
+        </tr>
+            
+         <tr>
+            <td>CSC102</td>
+            <td>Mr H.</td>
+            <td>3</td>
+         </tr>
+         
+        <tr>
+            <td>NTW102</td>
+            <td>Karina Stippick </td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>NTW103</td>
+            <td>Jeremy Bunce    </td>
+            <td>3</td>
+        </tr>
+    </table>
+</p2>
 <footer>
     Zachary T. Black
     <br>
@@ -64,4 +99,5 @@
     successfully, it is vital that we turn each and every dark tear into a pearl of wisdom,
     and find the blessing in every curse. 
 </footer> 
+</body>
 </html>
